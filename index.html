@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="./script.js" defer></script>
+    <title>To Do App</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>TO-DO the Web App</h1>
+    </header>
+    <main>
+      <label for="taskName">Task Name: </label>
+      <input id="taskName" type="text" required />
+      <time>
+        <label for="duration"></label><input id="duration" type="number" />
+        <select>
+          <option value="hours">Hours</option>
+          <option value="minutes">Minutes</option>
+        </select>
+      </time>
+      <button onClick="handleSubmit()" type="submit" id="submit">Submit</button>
+      <ul class="taskList"></ul>
+    </main>
+  </body>
+</html>
